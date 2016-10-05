@@ -1,10 +1,18 @@
 require 'active_record'
-require 'ffaker'
+
 require 'pg'
 require_relative 'connection'
 require_relative '../models/pokemon'
+require_relative '../models/trainer'
+require_relative 'sample_data'
+
 
 Pokemon.destroy_all
+Trainer.destroy_all
+Trainer.create(name: "Ash", level: 10, img_url: "https://media.giphy.com/media/10VUKegLolJEnC/giphy.gif")
+Trainer.create(name: "Misty", level: 20, img_url: "https://media.giphy.com/media/aZMcYNoGzpsc0/giphy.gif")
+Trainer.create(name: "Brock", level: 30, img_url: "https://media.giphy.com/media/tPOX8WNomXic8/giphy.gif")
+
 Pokemon.create(name: "Charmander", cp: rand(800), poke_type: "fire", img_url: "https://img.pokemondb.net/artwork/charmander.jpg")
 Pokemon.create(name: "Squirtle", cp: rand(800), poke_type: "water", img_url: "https://img.pokemondb.net/artwork/squirtle.jpg")
 Pokemon.create(name: "Pikachu", cp: rand(800), poke_type: "lightning", img_url: "https://img.pokemondb.net/artwork/pikachu.jpg")
