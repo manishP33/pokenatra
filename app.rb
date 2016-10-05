@@ -11,3 +11,8 @@ require_relative 'models/trainer'
 get '/' do
   "Hello World"
 end
+
+get '/pokemons' do
+  @pokemons = Pokemon.all
+  erb :"pokemons/index"
+end
