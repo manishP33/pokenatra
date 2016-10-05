@@ -1,0 +1,21 @@
+<h2>Pokenatra Laboratory</h2>
+<form action="/pokemons/edit/<%= @pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label>Name</label>
+  <input type="text" name="name" value="<%= @pokemon.name %>">
+
+  <label>Type</label>
+  <input type="text" name="poke_type" value="<%= @pokemon.poke_type %>">
+
+  <label>CP</label>
+  <input type="text" name="cp" value="<%= @pokemon.cp %>">
+
+  <label>Photo Id</label>
+  <input type="text" name="img_url" value="<%= @pokemon.img_url %>">
+
+  <label>Trainer</label>
+  <input type="text" name="trainer name" value="<%= @trainer.name %>">
+
+  <button type="submit">Submit</button>
+</form>

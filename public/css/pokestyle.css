@@ -7,7 +7,7 @@ Uncomment for sick pokestyle
   src: url(../fonts/PokemonSolid.ttf) format("truetype");
 }
 
-a, p, h2, h3 {
+a, p, h1, h2, h3 {
   color: rgb(215, 215, 0);
   text-shadow: rgb(35, 75, 180) 3px 3px 1px;
   -webkit-text-stroke: 2px rgb(55, 95, 200);
@@ -23,6 +23,7 @@ body {
   font-family: "Pokemon", monospace;
   letter-spacing: .25em;
   font-size: 200%;
+  text-align: center;
 }
 
 a:hover {
@@ -52,6 +53,20 @@ a:hover {
   border-right-color: rgba(225, 225, 225, .5);
   border-bottom-color: rgba(225, 225, 225, .5);
 }
+.trainer{
+  min-width: 375px;
+  background-color: #ffffcc;
+  padding: 10px;
+  margin: 40px;
+  box-sizing: border-box;
+  border: 15px inset;
+  border-radius: 100px;
+  border-top-color: rgba(255, 0, 0, .5);
+  border-left-color: rgba(255, 0, 0, .5);
+  border-right-color: rgba(225, 225, 225, .5);
+  border-bottom-color: rgba(225, 225, 225, .5);
+}
+
 
 @keyframes pulse {
   0% {

@@ -1,0 +1,8 @@
+<h2>Pokemon Name: <%= @pokemon.name %></h2>
+<h2>Pic:</h2> <img src="<%= @pokemon.img_url %>">
+<h2>Type: <%= @pokemon.poke_type %></h2>
+<h2>CP:  <%= @pokemon.cp %></h2>
+
+<h1>Trainer: <a href="/trainers/<%=@trainer.id%>"><%=@trainer.name%></a></h1>
+
+<h3><a href='/pokemons/edit/<%= @pokemon.id %>'>Take this pokemon to Lab</a></h3>

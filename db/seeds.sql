@@ -8,7 +8,7 @@ ALTER SEQUENCE trainers_id_seq RESTART WITH 1;
 INSERT INTO pokemons (name, cp, poke_type, img_url, trainer_id) VALUES ('Charmander', 434, 'fire', 'http://rs254.pbsrc.com/albums/hh106/varoneek/211.gif~c200', 1);
 INSERT INTO pokemons (name, cp, poke_type, img_url, trainer_id) VALUES ('Squirtle', 234, 'water', 'https://img.pokemondb.net/artwork/squirtle.jpg', 1);
 INSERT INTO pokemons (name, cp, poke_type, img_url, trainer_id) VALUES ('Pikachu', 565, 'lightning', 'https://img.pokemondb.net/artwork/pikachu.jpg', 1);
-INSERT INTO pokemons (name, cp, poke_type, img_url, trainer_id) VALUES ('Bulbasaur', 344, 'grass', 'ttps://img.pokemondb.net/artwork/bulbasaur.jpg', 2);
+INSERT INTO pokemons (name, cp, poke_type, img_url, trainer_id) VALUES ('Bulbasaur', 344, 'grass', 'https://img.pokemondb.net/artwork/bulbasaur.jpg', 2);
 INSERT INTO pokemons (name, cp, poke_type, img_url, trainer_id) VALUES ('Clefairy', 435, 'fairy', 'https://img.pokemondb.net/artwork/clefairy.jpg', 2);
 INSERT INTO pokemons (name, cp, poke_type, img_url, trainer_id) VALUES ('Nidoking', 534, 'poison ground', 'https://img.pokemondb.net/artwork/nidoking.jpg', 3);
 INSERT INTO pokemons (name, cp, poke_type, img_url, trainer_id) VALUES ('Gengar', 787, 'ghost poison', 'https://img.pokemondb.net/artwork/gengar.jpg', 3);
