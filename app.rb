@@ -22,16 +22,15 @@ get '/pokemons/:id' do
   @trainer = Trainer.find(params[:id])
   erb :"pokemons/show"
 end
-get '/pokemons/edit/:id' do
+get '/pokemons/:id/edit' do
   @pokemon = Pokemon.find(params[:id])
-  @trainer = Trainer.find(params[:id])
   erb :"pokemons/edit"
 end
 
-put '/pokemons/edit/:id' do
+put '/pokemons/:id/edit' do
   @pokemons = Pokemon.find(params[:id])
   @pokemons.update(params[:pokemon])
-  redirect "/pokemons/edit/:id"
+  redirect "/pokemons/:id/edit"
 end
 
 get '/trainers' do
